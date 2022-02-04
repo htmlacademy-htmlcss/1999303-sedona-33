@@ -11,7 +11,7 @@
 <body>
     <!--Верстка шапки сайта-->
     <header class="page-header">
-        <img class="logo" src="" alt="Логотип Седоны">
+        <a href="index.html"><img class="logo" src="" alt="Логотип Седоны"></a>
         <nav class="navigation">
             <ul class="navigation-list">
                 <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
@@ -32,9 +32,6 @@
     </header>
     <!--Верстка основной части католога гостинц сайта-->
     <main class="main-inner">
-        <!--
-        Верстка фильтрации гостиниц
-      -->
         <section class="filter-product">
             <h1 class="filter-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -97,9 +94,6 @@
                 <button class="filter-button-reset" type="reset">Сбросить</button>
             </form>
         </section>
-        <!--
-          верстка сортировки гостиниц
-        -->
         <section class="Sorting">
             <h2 class="sorting-title">Найдено гостиниц: 38</h2>
             <select class="select-control" aria-label="Сортировка">
@@ -113,9 +107,6 @@
             <a class="sorting-button" href="#"><span class="visually-hidden">Показать на весь экран</span></a>
             <a class="sorting-button" href="#"><span class="visually-hidden">Показать список</span></a>
         </section>
-        <!--
-          верстка карточек гостиниц
-        -->
         <section class="catatog">
             <ul class="product-list">
                 <li class="product-card">
@@ -127,6 +118,13 @@
                     <span class="product-card-price">От 4000</span>
                     <a class="button protuct-card-button" href="">Подробнее</a>
                     <a class="protuct-card-button protuct-card-button-blue" href="">В избранное</a>
+                    <form action="https://echo.htmlacademy.ru/">
+                        <input class="rating-item" type="radio" value="1" name="rating">
+                        <input class="rating-item" type="radio" value="2" name="rating">
+                        <input class="rating-item" type="radio" value="3" name="rating">
+                        <input class="rating-item" type="radio" value="4" name="rating">
+                    </form>
+                    <span class="rating-value">Рейтинг:8,5</span>
                 </li>
                 <li class="product-card">
                     <a class="product-card-link" href="#">
@@ -137,6 +135,12 @@
                     <span class="product-card-price">От 3000</span>
                     <a class="button protuct-card-button" href="">Подробнее</a>
                     <a class="protuct-card-button protuct-card-button-blue" href="">В избранное</a>
+                    <form action="https://echo.htmlacademy.ru/">
+                        <input class="rating-item" type="radio" value="1" name="rating">
+                        <input class="rating-item" type="radio" value="2" name="rating">
+                        <input class="rating-item" type="radio" value="3" name="rating">
+                    </form>
+                    <span class="rating-value">Рейтинг:8,9</span>
                 </li>
                 <li class="product-card">
                     <a class="product-card-link" href="#">
@@ -147,6 +151,11 @@
                     <span class="product-card-price">От 2000</span>
                     <a class="button protuct-card-button" href="">Подробнее</a>
                     <a class="protuct-card-button protuct-card-button-blue" href="">В избранное</a>
+                    <form action="https://echo.htmlacademy.ru/">
+                        <input class="rating-item" type="radio" value="1" name="rating">
+                        <input class="rating-item" type="radio" value="2" name="rating">
+                    </form>
+                    <span class="rating-value">Рейтинг:9,2</span>
                 </li>
                 <li class="product-card">
                     <a class="product-card-link" href="#">
@@ -157,12 +166,14 @@
                     <span class="product-card-price">От 3000</span>
                     <a class="button protuct-card-button" href="">Подробнее</a>
                     <a class="protuct-card-button protuct-card-button-blue" href="">В избранное</a>
+                    <form action="https://echo.htmlacademy.ru/">
+                        <input class="rating-item" type="radio" value="1" name="rating">
+                        <input class="rating-item" type="radio" value="2" name="rating">
+                    </form>
+                    <span class="rating-value">Рейтинг:9,2</span>
                 </li>
             </ul>
         </section>
-        <!--
-          Верстка пагинации
-        -->
         <section class="pagination">
             <button class="pagination-button" type="button">Загрузить ещё</button>
             <ul class="pagintation-list">
@@ -170,18 +181,21 @@
                 <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
                 <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
                 <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
-                <li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
-                <li class="pagination-item"><a class="pagination-link" href="#">6</a></li>
-                <li class="pagination-item"><a class="pagination-link" href="#">7</a></li>
-                <li class="pagination-item"><a class="pagination-link" href="#">8</a></li>
-                <li class="pagination-item"><a class="pagination-link" href="#">9</a></li>
                 <li class="pagination-item"><a class="pagination-link" href="#">10</a></li>
             </ul>
-            <h2 class="pagination-title">Гостиниц найдено:4</h2>
+            <select size="1" class="pagination-select" aria-label="Выбор страницы">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option selected value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
         </section>
-        <!--
-          Верстка формы рассылки
-        -->
         <section class="newsletter">
             <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
             <h3 class="newsletter-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</h3>
