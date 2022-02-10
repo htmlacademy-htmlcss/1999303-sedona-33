@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>HTML Academy: Седона</title>
 </head>
 
 <body>
     <!--Верстка шапки сайта-->
     <header class="page-header">
-        <a href="index.html"><img width="139" height="70px" class="logo" src="/assets/images/logo.svg" alt="Логотип Седоны"></a>
+        <img class="logo" width="139" height="70px" src="/assets/images/logo.svg" alt="Логотип Седоны">
         <nav class="navigation">
             <ul class="navigation-list">
                 <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
@@ -19,13 +18,11 @@
                 <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
             </ul>
             <ul class="navigation-list navigation-user">
-                <li class="navigation-item"><a class="navigation-link" href="#"><span
-                            class="visually-hidden">Поиск</span></a>
+                <li class="navigation-item"><a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
                 </li>
                 <li class="navigation-item"><a class="navigation-link" href="#"><span
-                            class="visually-hidden">Избранное</span></a></li>
-                <li class="navigation-item"><a class="button navigation-link" href="#"><span
-                            class="visually-hidden">Заказ</span></a>
+            class="visually-hidden">Избранное</span></a></li>
+                <li class="navigation-item"><a class="button navigation-link" href="#"><span class="visually-hidden">Заказ</span></a>
                 </li>
             </ul>
         </nav>
@@ -116,8 +113,8 @@
                     </a>
                     <span class="product-card-type">Гостиница</span>
                     <span class="product-card-price">От 4000</span>
-                    <a class="button protuct-card-button" href="">Подробнее</a>
-                    <a class="protuct-card-button protuct-card-button-blue" href="">В избранное</a>
+                    <a class="button" href="">Подробнее</a>
+                    <a class="button protuct-card-button" href="">В избранное</a>
                     <form action="https://echo.htmlacademy.ru/">
                         <input class="rating-item" type="radio" value="1" name="rating">
                         <input class="rating-item" type="radio" value="2" name="rating">
@@ -175,7 +172,7 @@
             </ul>
         </section>
         <section class="pagination">
-            <button class="pagination-button" type="button">Загрузить ещё</button>
+            <button class="button pagination-button" type="button">Загрузить ещё</button>
             <ul class="pagintation-list">
                 <li class="pagination-item"><a class="pagination-link pagination-current" href="#">1</a></li>
                 <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
@@ -200,7 +197,7 @@
             <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
             <h3 class="newsletter-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</h3>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input type="email" name="email" placeholder="Ваш e-mail">
+                <input class="newsletter-input" type="email" name="email" placeholder="Ваш e-mail">
                 <button class="newsletter-button" type="submit">Записаться</button>
             </form>
         </section>
@@ -229,7 +226,7 @@
         </section>
         <section class="footer-phone">
             <h2 class="visually-hidden">Номер телефона</h2>
-            <a href="tel:88128121212">+7 (812) 812-12-12</a>
+            <a class="footer-phone-link" href="tel:88128121212">+7 (812) 812-12-12</a>
         </section>
         <section class="footer-author">
             <h2 class="visually-hidden">Автор макета</h2>
